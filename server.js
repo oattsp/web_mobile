@@ -6,7 +6,7 @@ const path = require('path');
 const app = express();
 
 // Server static assets
-app.use(express.static(path.resolve(__dirname, '..', 'build')));
+app.use(express.static(path.resolve(__dirname, 'build')));
 app.use(cors())
 
 app.get('*', (req, res) => {
